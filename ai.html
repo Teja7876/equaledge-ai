@@ -6,19 +6,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{font-family:system-ui,Arial;margin:0;background:#f7f9fc;}
-.header{background:#0b3d91;color:#fff;padding:15px;}
-.nav{display:flex;justify-content:space-between;}
-.nav a{color:#fff;text-decoration:none;margin-left:15px;}
-.ai-page{max-width:900px;margin:30px auto;padding:20px;}
-.chat-container{border:1px solid #ddd;border-radius:8px;background:#fff;padding:20px;min-height:400px;overflow-y:auto;}
-.message{margin-bottom:15px;padding:10px;border-radius:6px;max-width:80%;white-space:pre-wrap;}
-.user{background:#e9f1ff;margin-left:auto;}
-.ai{background:#f1f1f1;}
-.sources{font-size:12px;margin-top:6px;}
-.chat-input{margin-top:20px;display:flex;gap:10px;}
-textarea{flex:1;padding:10px;height:60px;}
-button{padding:10px 20px;background:#0b3d91;color:#fff;border:none;cursor:pointer;}
+body {
+  font-family: system-ui, Arial;
+  margin: 0;
+  background: #f7f9fc;
+}
+
+.header {
+  background: #0b3d91;
+  color: #fff;
+  padding: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.ai-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.chat-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 80%;
+  white-space: pre-wrap;
+}
+
+.user {
+  background: #e9f1ff;
+  margin-left: auto;
+}
+
+.ai {
+  background: #f1f1f1;
+}
+
+.meta {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.chat-input {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  height: 60px;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0b3d91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.actions {
+  margin-top: 10px;
+  text-align: right;
+}
 </style>
 </head>
 
@@ -35,15 +114,18 @@ button{padding:10px 20px;background:#0b3d91;color:#fff;border:none;cursor:pointe
 </header>
 
 <main class="ai-page">
-
 <h1>EqualEdge AI Assistant</h1>
-<p>Ask about disability rights, RPwD Act, and inclusive education.</p>
+<p>Ask questions about the RPwD Act and disability rights.</p>
 
 <div id="chat" class="chat-container"></div>
 
 <div class="chat-input">
   <textarea id="question" placeholder="Ask your question..."></textarea>
   <button id="askBtn">Ask</button>
+</div>
+
+<div class="actions">
+  <button onclick="clearChat()">Clear Chat</button>
 </div>
 
 </main>
@@ -53,8 +135,7 @@ button{padding:10px 20px;background:#0b3d91;color:#fff;border:none;cursor:pointe
 </footer>
 
 <script>
-
-const API_URL = "https://equaledge-ai.equaledge1ai.workers.dev/search";
+const API_URL = "https://equaledge-ai.equaledge1ai.workers.dev/ask";
 
 const chat = document.getElementById("chat");
 const questionBox = document.getElementById("question");
@@ -62,14 +143,14 @@ const askBtn = document.getElementById("askBtn");
 
 askBtn.onclick = askAI;
 
-questionBox.addEventListener("keydown", (e)=>{
-  if(e.key==="Enter" && !e.shiftKey){
+questionBox.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
     e.preventDefault();
     askAI();
   }
 });
 
-function addMessage(text, role){
+function addMessage(text, role) {
   const msg = document.createElement("div");
   msg.className = "message " + role;
   msg.innerText = text;
@@ -78,77 +159,68 @@ function addMessage(text, role){
   return msg;
 }
 
-function addSources(sources){
-  if(!Array.isArray(sources) || sources.length===0) return;
+function addSections(sections) {
+  if (!Array.isArray(sections) || sections.length === 0) return;
 
   const div = document.createElement("div");
-  div.className = "sources";
-
-  div.innerHTML = "<b>Sources:</b><br>" +
-    sources.map(s => {
-      try{
-        const url = new URL(s);
-        return `<a href="${url.href}" target="_blank">${url.hostname}</a>`;
-      }catch{
-        return "";
-      }
-    }).join("<br>");
+  div.className = "meta";
+  div.innerHTML =
+    "<b>Sections Used:</b><br>" +
+    sections.map(s => "Section " + s).join("<br>");
 
   chat.appendChild(div);
 }
 
-async function askAI(){
+function clearChat() {
+  chat.innerHTML = "";
+}
 
+async function askAI() {
   const q = questionBox.value.trim();
-  if(!q){
-    alert("Enter a question");
+
+  if (q.length < 5) {
+    alert("Enter a valid question (min 5 characters)");
     return;
   }
 
-  addMessage(q,"user");
-  questionBox.value="";
+  addMessage(q, "user");
+  questionBox.value = "";
 
-  const thinking = addMessage("Thinking...","ai");
+  const thinking = addMessage("Analyzing RPwD Act...", "ai");
+
   askBtn.disabled = true;
 
-  try{
+  try {
+    const res = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ question: q })
+    });
 
-    const url = API_URL + "?q=" + encodeURIComponent(q) + "&t=" + Date.now();
-
-    const res = await fetch(url, { cache: "no-store" });
-
-    if(!res.ok){
-      throw new Error("HTTP " + res.status);
+    if (!res.ok) {
+      throw new Error("Server error: " + res.status);
     }
 
-    const text = await res.text();
-
-    let data;
-
-    try{
-      data = JSON.parse(text);
-    }catch{
-      thinking.innerText = "Invalid server response";
-      console.error("RAW RESPONSE:", text);
-      return;
-    }
+    const data = await res.json();
 
     console.log("API RESPONSE:", data);
 
-    if(data && typeof data.answer === "string" && data.answer.trim() !== ""){
+    if (data && data.answer) {
       thinking.innerText = data.answer;
-      addSources(data.sources);
-    }else{
-      thinking.innerText = "No answer returned (API issue)";
+      addSections(data.sections_used);
+    } else {
+      thinking.innerText = "No answer returned from AI.";
     }
 
-  }catch(e){
-    thinking.innerText = "Error: " + e.message;
+  } catch (error) {
+    console.error(error);
+    thinking.innerText = "Error: Unable to connect to AI service.";
   }
 
   askBtn.disabled = false;
 }
-
 </script>
 
 </body>
