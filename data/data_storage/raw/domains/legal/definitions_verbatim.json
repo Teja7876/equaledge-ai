@@ -1,0 +1,53 @@
+{
+  "definitions": {
+    "person_with_disability": {
+      "section": "Section 2(s)",
+      "text": "Person with disability means a person with long term physical, mental, intellectual or sensory impairment which, in interaction with barriers, hinders his full and effective participation in society equally with others.",
+      "importance": "Foundational definition triggering all protections under the Act."
+    },
+    "person_with_benchmark_disability": {
+      "section": "Section 2(r)",
+      "text": "Person with benchmark disability means a person with not less than forty per cent of a specified disability as certified by the certifying authority.",
+      "importance": "Threshold requirement for reservation and certain statutory entitlements."
+    },
+    "specified_disability": {
+      "section": "Section 2(zc) read with the Schedule",
+      "text": "Specified disability means the disabilities as specified in the Schedule to this Act.",
+      "importance": "Links statutory definitions to the 21 recognized disabilities."
+    },
+    "reasonable_accommodation": {
+      "section": "Section 2(y)",
+      "text": "Reasonable accommodation means necessary and appropriate modification and adjustments, without imposing a disproportionate or undue burden, to ensure persons with disabilities enjoy or exercise rights equally with others.",
+      "importance": "Core operational principle ensuring equality."
+    },
+    "inclusive_education": {
+      "section": "Section 2(m)",
+      "text": "Inclusive education means a system of education wherein students with and without disability learn together and the system of teaching and learning is suitably adapted to meet the learning needs of different types of students with disabilities.",
+      "importance": "Foundation for Sections 16 and 17 obligations."
+    },
+    "high_support_needs": {
+      "section": "Section 2(t)",
+      "text": "Person with high support needs means a person with benchmark disability certified under clause (a) of sub-section (2) of Section 58 who needs high support.",
+      "importance": "Triggers Section 38 individualized support obligations."
+    },
+    "discrimination": {
+      "section": "Section 2(h)",
+      "text": "Discrimination in relation to disability means any distinction, exclusion, restriction on the basis of disability which is intended to or has the effect of impairing or nullifying the recognition, enjoyment or exercise of rights on an equal basis with others.",
+      "importance": "Defines unlawful conduct under Section 3."
+    },
+    "establishment": {
+      "section": "Section 2(i)",
+      "text": "Establishment means a Government establishment and includes Government companies, corporations, authorities or bodies owned or controlled by Government.",
+      "importance": "Determines scope of reservation and employment obligations."
+    }
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

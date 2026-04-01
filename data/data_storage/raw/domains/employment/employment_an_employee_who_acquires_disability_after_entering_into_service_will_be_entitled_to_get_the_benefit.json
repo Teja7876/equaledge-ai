@@ -1,0 +1,42 @@
+{
+    "source_file": "employment An employee who acquires disability after entering into service will be entitled to get the benefit.pdf",
+    "domain": "disability_employment",
+    "verbatim_text": "",
+    "official_employment_context": {
+        "international_framework": {
+            "instrument": "UN Convention on the Rights of Persons with Disabilities (CRPD)",
+            "article": "Article 27 \u2013 Work and Employment",
+            "core_obligations": [
+                "Right to work on equal basis with others",
+                "Non-discrimination in recruitment and employment",
+                "Reasonable accommodation in workplace",
+                "Equal remuneration and safe working conditions",
+                "Promotion of self-employment and entrepreneurship"
+            ]
+        },
+        "india_statutory_framework": {
+            "rpwd_act_2016": [
+                "4% reservation in government employment (Section 34)",
+                "Non-discrimination in employment (Section 20)",
+                "Reasonable accommodation obligations",
+                "Equal opportunity policy requirement"
+            ],
+            "employment_rules": [
+                "Identification of posts for benchmark disabilities",
+                "Reservation roster maintenance",
+                "Promotion safeguards"
+            ],
+            "skill_development_framework": [
+                "National Skill Development initiatives for PwDs",
+                "Vocational rehabilitation services"
+            ]
+        }
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

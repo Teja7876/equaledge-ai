@@ -1,0 +1,137 @@
+[
+  {
+    "id": "reservation_jobs",
+    "section": "Section 34",
+    "title": "Reservation in Government Employment",
+    "intent": "employment",
+    "keywords": [
+      "reservation",
+      "job reservation",
+      "employment reservation",
+      "government job",
+      "quota",
+      "job quota",
+      "employment quota",
+      "government employment",
+      "work reservation",
+      "public sector jobs"
+    ],
+    "text": "The Rights of Persons with Disabilities Act 2016 mandates a minimum of four percent reservation in government employment for persons with benchmark disabilities."
+  },
+  {
+    "id": "inclusive_education",
+    "section": "Section 16",
+    "title": "Inclusive Education",
+    "intent": "education",
+    "keywords": [
+      "education",
+      "school",
+      "college",
+      "university",
+      "students with disabilities",
+      "inclusive education",
+      "education support",
+      "education rights",
+      "disabled students",
+      "school access"
+    ],
+    "text": "Educational institutions funded or recognized by the government must provide inclusive education and appropriate support to students with disabilities."
+  },
+  {
+    "id": "non_discrimination_education",
+    "section": "Section 17",
+    "title": "Non-Discrimination in Education",
+    "intent": "discrimination",
+    "keywords": [
+      "education discrimination",
+      "school discrimination",
+      "deny admission",
+      "reject student",
+      "discrimination in school",
+      "education equality",
+      "school rights"
+    ],
+    "text": "No educational institution shall discriminate against any student on the ground of disability."
+  },
+  {
+    "id": "reasonable_accommodation",
+    "section": "Section 2(y)",
+    "title": "Reasonable Accommodation",
+    "intent": "accommodation",
+    "keywords": [
+      "reasonable accommodation",
+      "adjustment",
+      "modification",
+      "assistive support",
+      "workplace accommodation",
+      "support adjustment",
+      "assistive services",
+      "support modification"
+    ],
+    "text": "Reasonable accommodation means necessary and appropriate modifications or adjustments ensuring persons with disabilities can enjoy rights equally with others."
+  },
+  {
+    "id": "equality_non_discrimination",
+    "section": "Section 3",
+    "title": "Equality and Non-Discrimination",
+    "intent": "rights",
+    "keywords": [
+      "equality",
+      "equal rights",
+      "equal opportunity",
+      "disability rights",
+      "legal protection",
+      "rights law",
+      "human rights",
+      "disability protection"
+    ],
+    "text": "Persons with disabilities have the right to equality, dignity, and protection against discrimination."
+  },
+  {
+    "id": "research_training",
+    "section": "Section 39",
+    "title": "Research and Training",
+    "intent": "research",
+    "keywords": [
+      "research",
+      "training",
+      "rehabilitation training",
+      "disability research",
+      "rehabilitation research"
+    ],
+    "text": "The government shall promote research and training in disability rehabilitation and related fields."
+  },
+  {
+    "id": "accessibility_ict",
+    "section": "Section 42",
+    "title": "Accessible Information and Communication Technology",
+    "intent": "technology",
+    "keywords": [
+      "accessible technology",
+      "accessible website",
+      "digital accessibility",
+      "assistive technology",
+      "screen reader",
+      "online accessibility",
+      "digital platform accessibility"
+    ],
+    "text": "The government must ensure that information and communication technology is accessible to persons with disabilities."
+  },
+  {
+    "id": "barrier_free_buildings",
+    "section": "Section 46",
+    "title": "Barrier-Free Access in Public Buildings",
+    "intent": "accessibility",
+    "keywords": [
+      "wheelchair access",
+      "accessible building",
+      "barrier free",
+      "accessible infrastructure",
+      "ramps",
+      "public building access",
+      "building accessibility",
+      "transport accessibility"
+    ],
+    "text": "Public buildings and infrastructure must be made accessible to persons with disabilities."
+  }
+]

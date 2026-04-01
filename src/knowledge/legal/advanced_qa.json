@@ -1,0 +1,98 @@
+{
+  "definitions": {
+    "content": [
+      {
+        "question": "Is 40 percent disability mandatory for reservation?",
+        "answer": "Yes. Reservation under Section 34 applies only to persons with benchmark disability defined under Section 2(r) as not less than forty per cent certified disability.",
+        "section_reference": [
+          "Section 2(r)",
+          "Section 34"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Does reservation apply to private companies?",
+        "answer": "No. Section 34 reservation applies only to Government establishments as defined under Section 2(i).",
+        "section_reference": [
+          "Section 2(i)",
+          "Section 34"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Is certificate issued in one State valid nationally?",
+        "answer": "Yes. Disability certification issued under Section 58 is valid throughout India unless lawfully revoked.",
+        "section_reference": [
+          "Section 58"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Can an employee be dismissed after acquiring disability during service?",
+        "answer": "No. Section 20 prohibits discrimination in employment, including termination solely on the ground of disability acquired during service.",
+        "section_reference": [
+          "Section 20"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Does reservation grouping change disability classification?",
+        "answer": "No. Grouping under Section 34 does not alter statutory classification under the Schedule.",
+        "section_reference": [
+          "Section 34",
+          "Schedule"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "What happens if reserved vacancy cannot be filled?",
+        "answer": "If a vacancy in a particular category cannot be filled, it may be filled by interchange among categories as per the proviso to Section 34(1).",
+        "section_reference": [
+          "Section 34(1) Proviso"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Can unfilled reserved vacancies be carried forward?",
+        "answer": "Yes. Unfilled vacancies may be carried forward to the succeeding recruitment year under Section 34(2).",
+        "section_reference": [
+          "Section 34(2)"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Is fraudulent use of disability benefits punishable?",
+        "answer": "Yes. Fraudulently availing benefits meant for persons with benchmark disabilities is punishable under Section 91 with imprisonment up to two years or fine or both.",
+        "section_reference": [
+          "Section 91"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Where can a complaint for denial of rights be filed?",
+        "answer": "A complaint may be filed before the State Commissioner or Chief Commissioner for Persons with Disabilities under Sections 74\u201383.",
+        "section_reference": [
+          "Sections 74\u201383"
+        ],
+        "confidence": "High"
+      },
+      {
+        "question": "Is insulting or assaulting a person with disability punishable?",
+        "answer": "Yes. Atrocities including intentional insult, intimidation or assault are punishable under Section 92 with imprisonment between six months and five years and fine.",
+        "section_reference": [
+          "Section 92"
+        ],
+        "confidence": "High"
+      }
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.023096",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

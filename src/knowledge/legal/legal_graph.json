@@ -1,0 +1,30 @@
+{
+  "Section 3": [
+    "Section 16",
+    "Section 17",
+    "Section 89"
+  ],
+  "Section 16": [
+    "Section 3",
+    "Section 17",
+    "Section 89"
+  ],
+  "Section 17": [
+    "Section 16",
+    "Section 3"
+  ],
+  "Section 34": [
+    "Section 33",
+    "Section 20",
+    "Section 89"
+  ],
+  "Section 20": [
+    "Section 34",
+    "Section 21"
+  ],
+  "Section 89": [
+    "Section 3",
+    "Section 16",
+    "Section 34"
+  ]
+}

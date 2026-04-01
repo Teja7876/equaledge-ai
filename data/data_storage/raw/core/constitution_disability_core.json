@@ -1,0 +1,38 @@
+[
+  {
+    "source": "Constitution of India",
+    "authority_level": "Constitutional",
+    "article": "Article 41",
+    "part": "Part IV - Directive Principles of State Policy",
+    "title": "Right to work, to education and to public assistance in certain cases",
+    "type": "Directive Principle",
+    "disability_relevance": "Explicit",
+    "weight": 1.0,
+    "last_updated": "1 May 2024",
+    "text": "The State shall, within the limits of its economic capacity and development, make effective provision for securing the right to work, to education and to public assistance in cases of unemployment, old age, sickness and disablement."
+  },
+  {
+    "source": "Constitution of India",
+    "authority_level": "Constitutional",
+    "article": "Article 15(2)",
+    "part": "Part III - Fundamental Rights",
+    "title": "Prohibition of discrimination on grounds of religion, race, caste, sex or place of birth",
+    "type": "Fundamental Right",
+    "disability_relevance": "Contextual (Not disability rights specific)",
+    "weight": 0.3,
+    "last_updated": "1 May 2024",
+    "text": "No citizen shall, on grounds only of religion, race, caste, sex, place of birth or any of them, be subject to any disability, liability, restriction or condition with regard to access to shops, public restaurants, hotels and places of public entertainment; or the use of wells, tanks, bathing ghats, roads and places of public resort maintained wholly or partly out of State funds or dedicated to the use of the general public."
+  },
+  {
+    "source": "Constitution of India",
+    "authority_level": "Constitutional",
+    "article": "Article 17",
+    "part": "Part III - Fundamental Rights",
+    "title": "Abolition of Untouchability",
+    "type": "Fundamental Right",
+    "disability_relevance": "Contextual (Not disability rights specific)",
+    "weight": 0.2,
+    "last_updated": "1 May 2024",
+    "text": "\"Untouchability\" is abolished and its practice in any form is forbidden. The enforcement of any disability arising out of \"Untouchability\" shall be an offence punishable in accordance with law."
+  }
+]

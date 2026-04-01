@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ThriveFusion | Disability Knowledge Platform</title>
+
+<meta name="description" content="ThriveFusion is a knowledge platform for disability rights, accessibility standards, assistive technology and inclusive education.">
+
+<link rel="canonical" href="https://thrivefusion.org">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="ThriveFusion Disability Knowledge Platform">
+<meta property="og:description" content="Research and knowledge platform for disability inclusion and accessibility">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/opendyslexic@0.1.0/opendyslexic.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+line-height:1.6;
+padding-top:65px;
+}
+
+/* Skip link */
+
+.skip-link{
+position:absolute;
+left:-9999px;
+}
+
+.skip-link:focus{
+left:10px;
+top:10px;
+background:black;
+color:white;
+padding:10px;
+z-index:10000;
+}
+
+/* Accessibility Toolbar */
+
+#accessibility-toolbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+color:white;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+padding:8px;
+z-index:9999;
+}
+
+#accessibility-toolbar button{
+background:#ffd200;
+border:none;
+padding:6px 10px;
+font-weight:bold;
+border-radius:4px;
+cursor:pointer;
+}
+
+/* Accessibility Modes */
+
+.high-contrast{
+background:black;
+color:white;
+}
+
+.grayscale{
+filter:grayscale(100%);
+}
+
+.dyslexia-font{
+font-family:"OpenDyslexic",Arial,sans-serif;
+}
+
+.extra-spacing{
+line-height:2;
+letter-spacing:0.06em;
+}
+
+.focus-mode *:focus{
+outline:3px solid #ffd200;
+outline-offset:3px;
+}
+
+/* Top bar */
+
+.topbar{
+background:#f4f6f8;
+padding:6px;
+text-align:center;
+font-size:14px;
+border-bottom:1px solid #e2e2e2;
+}
+
+.greeting{
+text-align:center;
+font-weight:600;
+padding:10px;
+color:#0b3d91;
+}
+
+/* Navigation */
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 20px;
+background:white;
+border-bottom:1px solid #e2e2e2;
+}
+
+.nav-links{
+display:flex;
+gap:18px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#222;
+}
+
+/* Hero */
+
+.hero{
+position:relative;
+text-align:center;
+}
+
+.hero img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.55);
+color:white;
+padding:30px;
+border-radius:8px;
+max-width:650px;
+}
+
+.hero-button{
+display:inline-block;
+margin-top:15px;
+background:#ffd200;
+color:black;
+padding:12px 24px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* Knowledge grid */
+
+.platform-stats{
+padding:40px 20px;
+text-align:center;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:25px;
+}
+
+.stat{
+background:#f7f7f7;
+padding:20px;
+border-radius:6px;
+}
+
+/* Mission */
+
+.mission{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+padding:40px 20px;
+align-items:center;
+}
+
+.mission img{
+width:100%;
+border-radius:6px;
+}
+
+/* Footer */
+
+.footer{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.footer a{
+color:#ffd200;
+margin:0 10px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="accessibility-toolbar">
+
+<button onclick="increaseFont()">A+</button>
+<button onclick="decreaseFont()">A-</button>
+<button onclick="toggleContrast()">Contrast</button>
+<button onclick="toggleGrayscale()">Grayscale</button>
+<button onclick="toggleDyslexia()">Dyslexia</button>
+<button onclick="toggleSpacing()">Spacing</button>
+<button onclick="toggleFocus()">Focus</button>
+<button onclick="readPage()">Read</button>
+<button onclick="resetAccessibility()">Reset</button>
+
+</div>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="topbar">
+<span id="datetime"></span>
+</div>
+
+<div class="greeting">
+<span id="greeting"></span>
+</div>
+
+<header>
+
+<nav class="nav">
+
+<div class="logo">
+<a href="index.html">ThriveFusion</a>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="ai.html">AI Assistant</a></li>
+<li><a href="blog.html">Research Articles</a></li>
+<li><a href="#">Accessibility Tools</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<main id="main-content">
+
+<section class="hero">
+
+<img src="images/professional-in-a-virtual-meeting.jpg"
+alt="Professionals discussing accessibility and disability research">
+
+<div class="hero-content">
+
+<h1>Disability Knowledge Platform</h1>
+
+<p>
+ThriveFusion provides reliable knowledge about disability rights,
+assistive technology, accessibility standards and inclusive education.
+</p>
+
+<p>
+Built for researchers, educators, NGOs and organizations working
+toward disability inclusion.
+</p>
+
+<a href="ai.html" class="hero-button">
+Open Accessibility AI Assistant
+</a>
+
+</div>
+
+</section>
+
+<section class="platform-stats">
+
+<h2>Knowledge Areas</h2>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>Disability Rights</h3>
+<p>Learn about protections under the Rights of Persons with Disabilities Act 2016.</p>
+</div>
+
+<div class="stat">
+<h3>Accessibility Standards</h3>
+<p>Understand WCAG guidelines and inclusive design practices.</p>
+</div>
+
+<div class="stat">
+<h3>Assistive Technology</h3>
+<p>Explore screen readers, braille displays and speech recognition tools.</p>
+</div>
+
+<div class="stat">
+<h3>Inclusive Education</h3>
+<p>Discover strategies that support accessible learning environments.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="mission">
+
+<div>
+
+<h2>Advancing Accessible Knowledge</h2>
+
+<p>
+ThriveFusion aims to make disability knowledge accessible to everyone
+through research, policy guidance and assistive technology resources.
+</p>
+
+<p>
+Our goal is to empower educators, researchers and organizations
+with reliable accessibility knowledge.
+</p>
+
+</div>
+
+<img
+src="images/a-group-of-diverse-colleagues-work-together-in-an-office.jpg"
+alt="Inclusive workplace collaboration">
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<p>© 2026 ThriveFusion Alliance Foundation</p>
+
+<nav>
+<a href="blog.html">Research Articles</a>
+<a href="#">Accessibility Tools</a>
+<a href="#">Privacy Policy</a>
+</nav>
+
+</footer>
+
+<script>
+
+/* Time + Greeting */
+
+function updateTime(){
+
+const now=new Date()
+
+document.getElementById("datetime").textContent=now.toLocaleString()
+
+const hour=now.getHours()
+
+let greeting="Hello"
+
+if(hour<12){greeting="Good Morning"}
+else if(hour<18){greeting="Good Afternoon"}
+else{greeting="Good Evening"}
+
+document.getElementById("greeting").textContent=greeting
+
+}
+
+updateTime()
+setInterval(updateTime,1000)
+
+/* Accessibility */
+
+let fontScale=1
+
+function increaseFont(){
+fontScale+=0.1
+document.body.style.fontSize=fontScale+"em"
+}
+
+function decreaseFont(){
+fontScale-=0.1
+document.body.style.fontSize=fontScale+"em"
+}
+
+function toggleContrast(){
+document.body.classList.toggle("high-contrast")
+}
+
+function toggleGrayscale(){
+document.body.classList.toggle("grayscale")
+}
+
+function toggleDyslexia(){
+document.body.classList.toggle("dyslexia-font")
+}
+
+function toggleSpacing(){
+document.body.classList.toggle("extra-spacing")
+}
+
+function toggleFocus(){
+document.body.classList.toggle("focus-mode")
+}
+
+function readPage(){
+
+const speech=new SpeechSynthesisUtterance(document.body.innerText)
+
+speech.rate=1
+speech.pitch=1
+
+speechSynthesis.speak(speech)
+
+}
+
+function resetAccessibility(){
+
+fontScale=1
+document.body.style.fontSize="1em"
+
+document.body.classList.remove(
+"high-contrast",
+"grayscale",
+"dyslexia-font",
+"extra-spacing",
+"focus-mode"
+)
+
+}
+
+</script>
+
+</body>
+</html>

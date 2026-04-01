@@ -1,0 +1,20 @@
+{
+  "definitions": {
+    "title": "Rights of Persons with Disabilities Rules, 2017",
+    "notification_number": "G.S.R. 591(E)",
+    "legal_status": {
+      "type": "rules",
+      "amends": "ACT_2016_RPWD_ORIGINAL",
+      "effective_from": "2017-06-15",
+      "superseded_by": null
+    }
+  },
+  "metadata": {
+    "canonical_id": "RULES_2017_RPWD_ORIGINAL",
+    "issuing_authority": "Department of Empowerment of Persons with Disabilities",
+    "source_url": "http://egazette.nic.in/WriteReadData/2017/176728.pdf",
+    "verification_status": "verified",
+    "publication_date": "2017-06-15",
+    "last_verified_date": "2026-02-23T09:31:12.680753"
+  }
+}

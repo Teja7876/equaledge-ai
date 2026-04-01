@@ -1,0 +1,17 @@
+{
+  "definitions": {
+    "title": "Persons with Disabilities Act, 1995",
+    "legal_status": {
+      "type": "deprecated",
+      "amends": null,
+      "effective_from": null,
+      "superseded_by": "ACT_2016_RPWD_ORIGINAL"
+    }
+  },
+  "metadata": {
+    "canonical_id": "ACT_1995_PWD_DEPRECATED",
+    "verification_status": "verified",
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:31:12.680754"
+  }
+}

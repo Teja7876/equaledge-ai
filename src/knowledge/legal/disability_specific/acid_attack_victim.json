@@ -1,0 +1,127 @@
+{
+    "disability_name": "Acid Attack Victim",
+    "legal_definition": {
+        "text": "Acid attack victim means a person disfigured due to violent assaults by throwing of acid or similar corrosive substance.",
+        "statutory_source": "Schedule to the Rights of Persons with Disabilities Act, 2016",
+        "classification_group": "Specified Disability \u2013 Disfigurement Based"
+    },
+    "statutory_status": {
+        "act": "Rights of Persons with Disabilities Act, 2016",
+        "schedule_recognition": true,
+        "category_type": "Specified Disability under the Schedule"
+    },
+    "benchmark_requirement": {
+        "definition": "Person with benchmark disability means a person with not less than forty per cent of a specified disability as certified.",
+        "section_reference": "Section 2(r), Sections 56\u201358",
+        "assessment_note": "Assessment based on extent of permanent disfigurement and functional impairment as per notified medical guidelines."
+    },
+    "reservation_category": {
+        "applicable_section": "Section 34(1)(c)",
+        "grouping_logic": "Included within the cluster of specified physical disabilities for reservation in Government establishments.",
+        "eligibility_condition": "Reservation applicable only for benchmark disability.",
+        "establishment_scope": "Applicable to Government establishments."
+    },
+    "certification_workflow": {
+        "assessment_guidelines": "Evaluation under medical guidelines notified by Central Government (Section 56).",
+        "certifying_authority": "Designated authority under Section 57.",
+        "certification_procedure": "Governed by Section 58.",
+        "appeal_mechanism": "Section 59."
+    },
+    "legal_rights_triggered": {
+        "equality_and_non_discrimination": "Section 3",
+        "inclusive_education": [
+            "Section 16",
+            "Section 17"
+        ],
+        "employment_protection": "Section 20",
+        "reasonable_accommodation_examples": [
+            "Modified work roles",
+            "Flexible attendance for medical treatment",
+            "Psychosocial support adjustments"
+        ],
+        "high_support_needs": "Section 38 (where severe functional limitation exists)",
+        "accessibility_mandate": [
+            "Sections 40\u201346"
+        ]
+    },
+    "distinction_framework": [
+        "Applies specifically to victims of corrosive substance attacks.",
+        "Disability arises from permanent disfigurement and/or functional impairment.",
+        "Reservation grouping does not merge statutory identity."
+    ],
+    "legal_boundary_conditions": [
+        "Reservation applicable only for benchmark disability.",
+        "Section 34 applies to Government establishments.",
+        "Certification must confirm permanent impact of acid attack.",
+        "Certification valid throughout India unless lawfully revoked."
+    ],
+    "interpretive_notes": [
+        "Recognition focuses on permanent physical disfigurement and functional consequences.",
+        "May overlap with visual or locomotor impairment depending on injury extent.",
+        "Legal protections extend beyond reservation to education, employment, dignity and accessibility."
+    ],
+    "structured_reasoning_tags": [
+        "Schedule_Disability",
+        "Disfigurement_Based_Disability",
+        "Benchmark_40_Percent",
+        "Reservation_Section_34_1_c",
+        "Certification_Sections_56_59",
+        "Non_Discrimination_Section_3"
+    ],
+    "legal_schema": {
+        "source_type": "statute",
+        "jurisdiction": "India",
+        "law_name": "Rights of Persons with Disabilities Act",
+        "version": "RPwD Act 2016",
+        "enactment_year": 2016,
+        "last_amended": 2022,
+        "citation": {
+            "chapter": "Chapter I",
+            "section": "2",
+            "subsection": "zc",
+            "schedule": "Schedule I",
+            "schedule_entry": "Acid attack victims",
+            "schedule_part": "Physical Disability"
+        }
+    },
+    "rights_triggered_intelligence": {
+        "equality_non_discrimination": "Section 3",
+        "inclusive_education": "Sections 16\u201318",
+        "employment_protection": "Sections 19\u201323",
+        "social_security_healthcare": "Sections 24\u201330",
+        "benchmark_entitlements": "Sections 31\u201337 (if benchmark >= 40%)",
+        "accessibility": "Sections 40\u201346",
+        "certification": {
+            "assessment_guidelines": "Section 56",
+            "certifying_authority": "Section 57",
+            "procedure": "Section 58",
+            "appeal": "Section 59"
+        }
+    },
+    "benchmark_logic_engine": {
+        "threshold_percent": 40,
+        "defined_under": "Section 2(r)",
+        "reservation_section": "Section 34(1)(c)",
+        "free_education": "Section 31",
+        "carry_forward_vacancies": "Section 34(2)",
+        "high_support_eligibility": "Section 38"
+    },
+    "certification_statutory_mapping": {
+        "assessment_guidelines": "Section 56",
+        "certifying_authority_designation": "Section 57",
+        "certification_procedure": "Section 58",
+        "appeal_mechanism": "Section 59"
+    },
+    "statutory_anchor": {
+        "defined_under": "Section 2(zc)",
+        "benchmark_defined_under": "Section 2(r)",
+        "person_defined_under": "Section 2(s)"
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

@@ -1,0 +1,58 @@
+{
+  "definitions": {
+    "core_instruction": "All answers must be verified against statutory text of the Rights of Persons with Disabilities Act, 2016 before being presented as authoritative.",
+    "verification_layers": {
+      "schedule_classification_check": {
+        "requirement": "Confirm disability is listed in the Schedule.",
+        "fallback_behavior": "If not listed, clearly state that it is not a specified disability under the Act."
+      },
+      "definition_anchor_check": {
+        "requirement": "Cross-check with DEFINITIONS_VERBATIM file for statutory definitions.",
+        "fallback_behavior": "If definition absent, state that the Act does not provide explicit definition text."
+      },
+      "benchmark_requirement_check": {
+        "requirement": "Verify 40 percent benchmark threshold under Section 2(r).",
+        "clarification_rule": "Reservation cannot be stated without benchmark confirmation."
+      },
+      "section_34_reservation_mapping_check": {
+        "requirement": "Map disability to correct Section 34(1)(a\u2013e) category.",
+        "interchange_rule_check": "If category unclear, apply interchange logic cautiously.",
+        "fallback_behavior": "If not explicitly mapped, state that reservation grouping is interpretive."
+      },
+      "penalty_validation_check": {
+        "requirement": "Cross-check against Sections 89\u201395 before stating criminal liability.",
+        "fallback_behavior": "If offence not covered, state no explicit penal provision found."
+      },
+      "governance_reference_check": {
+        "requirement": "Confirm grievance authority using GOVERNANCE_AND_GRIEVANCE file.",
+        "clarification_rule": "Distinguish between quasi-judicial authority and criminal court."
+      }
+    },
+    "answer_behavior_rules": {
+      "no_hallucination_policy": "Do not fabricate statutory provisions.",
+      "explicit_absence_rule": "If Act is silent, explicitly state absence of statutory provision.",
+      "interpretive_flag": "Clearly label interpretation versus express statutory language.",
+      "precision_requirement": "Always cite section numbers where applicable."
+    },
+    "confidence_framework": {
+      "high_confidence": "Direct statutory provision available and cited.",
+      "moderate_confidence": "Provision inferred through cross-reference.",
+      "low_confidence": "No explicit statutory backing."
+    },
+    "structured_reasoning_tags": [
+      "Legal_Verification_Layer",
+      "Anti_Hallucination_Control",
+      "Section_Cross_Check",
+      "Reservation_Mapping_Control"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

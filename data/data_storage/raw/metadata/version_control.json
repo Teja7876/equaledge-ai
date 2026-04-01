@@ -1,0 +1,45 @@
+{
+    "current_version": "1.3.0",
+    "semantic_versioning": true,
+    "change_log": [
+        {
+            "version": "1.1.0",
+            "date": "2026-02-23T09:13:25.100475",
+            "changes": [
+                "Injected mandatory source metadata fields",
+                "Wrapped list-only JSON into canonical container",
+                "Added source validation registry",
+                "Enabled verification filter before training"
+            ]
+        },
+        {
+            "version": "1.2.0",
+            "date": "2026-02-23T09:15:50.890961",
+            "changes": [
+                "Executed authoritative source verification scan",
+                "Generated source verification report",
+                "Activated training lock for unverified content"
+            ]
+        },
+        {
+            "version": "1.3.0",
+            "date": "2026-02-23T09:31:12.682380",
+            "changes": [
+                "Structured Act 2016 original verified entry",
+                "Structured Rules 2017 verified entry",
+                "Marked 1995 Act deprecated",
+                "Created amendment registry architecture",
+                "Created programmatic consolidated version placeholder",
+                "Maintained training lock until amendment verification"
+            ]
+        }
+    ],
+    "review_cycle_days": 90,
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

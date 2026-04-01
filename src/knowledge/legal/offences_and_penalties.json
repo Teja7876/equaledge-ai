@@ -1,0 +1,56 @@
+{
+  "definitions": {
+    "statutory_reference": "Sections 89\u201395, Rights of Persons with Disabilities Act, 2016",
+    "section_89_general_contravention": {
+      "offence_type": "Contravention of any provision of the Act or rules made thereunder.",
+      "penalty": {
+        "first_violation": "Fine up to \u20b910,000.",
+        "subsequent_violation": "Fine not less than \u20b950,000 and may extend to \u20b95,00,000."
+      }
+    },
+    "section_90_offences_by_companies": {
+      "offence_type": "Offence committed by a company or establishment.",
+      "liability": "Persons in charge and responsible for conduct of business deemed guilty unless due diligence proven."
+    },
+    "section_91_fraudulent_benefits": {
+      "offence_type": "Fraudulently availing benefits meant for persons with benchmark disabilities.",
+      "penalty": "Imprisonment up to 2 years or fine up to \u20b91,00,000 or both."
+    },
+    "section_92_atrocities_against_person_with_disability": {
+      "offence_type": "Intentional insult, intimidation, assault, sexual exploitation, denial of food or rights.",
+      "penalty": "Imprisonment not less than 6 months which may extend to 5 years and fine."
+    },
+    "section_93_failure_to_furnish_information": {
+      "offence_type": "Failure to produce required documents or information.",
+      "penalty": "Fine as prescribed."
+    },
+    "section_94_false_statement": {
+      "offence_type": "Making false statements or furnishing false information.",
+      "penalty": "Fine or imprisonment as prescribed."
+    },
+    "section_95_cognizance_of_offences": {
+      "note": "Court shall take cognizance only on complaint made by appropriate Government or authorized authority."
+    },
+    "legal_boundary_conditions": [
+      "Penalties apply only upon formal contravention.",
+      "Procedural safeguards apply before prosecution.",
+      "Criminal liability requires statutory conditions to be satisfied."
+    ],
+    "structured_reasoning_tags": [
+      "Sections_89_95",
+      "Penalty_Framework",
+      "Fraudulent_Benefits",
+      "Atrocities_Section_92",
+      "Company_Liability"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

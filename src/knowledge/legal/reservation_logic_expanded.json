@@ -1,0 +1,64 @@
+{
+  "definitions": {
+    "section_34_overview": {
+      "section_reference": "Section 34, Rights of Persons with Disabilities Act, 2016",
+      "total_reservation": "Not less than 4 percent of total number of vacancies in Government establishments.",
+      "benchmark_required": true,
+      "applicability": "Applies to Government establishments as defined under Section 2(i)."
+    },
+    "category_wise_breakup": {
+      "section_34_1_a": "Blindness and Low Vision \u2013 1 percent",
+      "section_34_1_b": "Deaf and Hard of Hearing \u2013 1 percent",
+      "section_34_1_c": "Locomotor disability including cerebral palsy, leprosy cured, dwarfism, acid attack victims and muscular dystrophy \u2013 1 percent",
+      "section_34_1_d": "Autism, intellectual disability, specific learning disability and mental illness \u2013 1 percent",
+      "section_34_1_e": "Multiple disabilities including deafblindness \u2013 1 percent (where applicable)"
+    },
+    "benchmark_condition": {
+      "definition_reference": "Section 2(r)",
+      "minimum_threshold": "Not less than 40 percent certified disability.",
+      "mandatory_for_reservation": true
+    },
+    "interchange_rule": {
+      "section_reference": "Proviso to Section 34(1)",
+      "logic": "If vacancy in a particular category cannot be filled due to non-availability of suitable person, it may be filled by interchange among the specified categories.",
+      "objective": "Ensures full utilization of 4 percent reservation."
+    },
+    "carry_forward_rule": {
+      "section_reference": "Section 34(2)",
+      "logic": "Unfilled vacancies shall be carried forward to the succeeding recruitment year.",
+      "limitation": "Total reservation including carry forward shall not exceed prescribed ceiling."
+    },
+    "post_identification_requirement": {
+      "section_reference": "Section 33",
+      "logic": "Appropriate Government shall identify posts suitable for persons with disabilities.",
+      "review_cycle": "Identification shall be reviewed periodically."
+    },
+    "promotion_dimension": {
+      "note": "Reservation in promotion subject to service rules and judicial interpretation.",
+      "interpretive_caution": "Not automatic unless specifically provided."
+    },
+    "legal_boundary_conditions": [
+      "Applies only to Government establishments.",
+      "Benchmark disability mandatory.",
+      "Certification under Sections 56\u201359 required.",
+      "Reservation grouping does not alter statutory identity of disability."
+    ],
+    "structured_reasoning_tags": [
+      "Section_34_Core",
+      "Four_Percent_Reservation",
+      "Benchmark_Requirement",
+      "Interchange_Rule",
+      "Carry_Forward",
+      "Post_Identification_Section_33"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

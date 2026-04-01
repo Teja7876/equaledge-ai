@@ -1,0 +1,21 @@
+{
+  "definitions": {
+    "title": "Rights of Persons with Disabilities Act, 2016",
+    "act_number": "Act No. 49 of 2016",
+    "date_of_assent": "2016-12-27",
+    "legal_status": {
+      "type": "original",
+      "amends": null,
+      "effective_from": "2016-12-27",
+      "superseded_by": null
+    }
+  },
+  "metadata": {
+    "canonical_id": "ACT_2016_RPWD_ORIGINAL",
+    "issuing_authority": "Parliament of India",
+    "source_url": "https://www.indiacode.nic.in/handle/123456789/2155",
+    "verification_status": "verified",
+    "publication_date": "2016-12-27",
+    "last_verified_date": "2026-02-23T09:31:12.680742"
+  }
+}

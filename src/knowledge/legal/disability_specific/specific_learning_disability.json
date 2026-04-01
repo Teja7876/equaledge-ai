@@ -1,0 +1,123 @@
+{
+    "disability_name": "Specific Learning Disability",
+    "legal_definition": {
+        "text": "Specific learning disabilities means a heterogeneous group of conditions wherein there is a deficit in processing language, spoken or written, that may manifest itself as difficulty to comprehend, speak, read, write, spell or to do mathematical calculations, and includes such conditions as perceptual disabilities, dyslexia, dysgraphia, dyscalculia, dyspraxia and developmental aphasia.",
+        "statutory_source": "Schedule to the Rights of Persons with Disabilities Act, 2016",
+        "read_with": "Section 2(zc) \u2013 Specified Disability"
+    },
+    "statutory_status": {
+        "act": "Rights of Persons with Disabilities Act, 2016",
+        "schedule_recognition": true,
+        "classification": "Specified Disability under the Schedule"
+    },
+    "benchmark_requirement": {
+        "definition": "Person with benchmark disability means a person with not less than forty per cent of a specified disability as certified by the certifying authority.",
+        "section_reference": "Section 2(r), Sections 56\u201358"
+    },
+    "reservation_category": {
+        "applicable_section": "Section 34(1)(d)",
+        "grouping_note": "Included within clause (d) category for reservation in Government establishments.",
+        "eligibility_condition": "Applicable only to persons with benchmark disability."
+    },
+    "certification_workflow": {
+        "assessment_guidelines": "Psychological and educational assessment as per guidelines notified under Section 56.",
+        "certifying_authority": "Designated medical authority under Section 57.",
+        "certification_procedure": "Process governed by Section 58.",
+        "appeal_mechanism": "Appeal under Section 59."
+    },
+    "legal_rights_triggered": {
+        "equality_and_non_discrimination": "Section 3",
+        "inclusive_education": [
+            "Section 16",
+            "Section 17"
+        ],
+        "reasonable_accommodation": "Provision of exam accommodations and academic adjustments",
+        "employment_protection": "Section 20",
+        "high_support_needs": "Section 38 (where applicable)",
+        "accessibility_mandate": [
+            "Sections 40\u201346"
+        ]
+    },
+    "distinction_framework": [
+        "Specific Learning Disability is distinct from Intellectual Disability.",
+        "It involves processing deficits rather than global intellectual limitation.",
+        "Reservation grouping does not merge statutory classification."
+    ],
+    "legal_boundary_conditions": [
+        "Reservation applies only to Government establishments as defined under the Act.",
+        "Benchmark threshold of 40% mandatory for reservation eligibility.",
+        "Certification must follow officially notified assessment standards.",
+        "Certification valid throughout India unless lawfully revoked."
+    ],
+    "interpretive_notes": [
+        "Includes conditions such as dyslexia, dysgraphia and dyscalculia.",
+        "Intelligence may be within normal range despite learning difficulty.",
+        "Legal protections extend beyond reservation to educational accommodations."
+    ],
+    "structured_reasoning_tags": [
+        "Schedule_Disability",
+        "Legal_Definition",
+        "Learning_Disorder",
+        "Neurodevelopmental_Disability",
+        "Benchmark_40_Percent",
+        "Reservation_Section_34",
+        "Certification_Sections_56_59",
+        "Non_Discrimination_Section_3"
+    ],
+    "legal_schema": {
+        "source_type": "statute",
+        "jurisdiction": "India",
+        "law_name": "Rights of Persons with Disabilities Act",
+        "version": "RPwD Act 2016",
+        "enactment_year": 2016,
+        "last_amended": 2022,
+        "citation": {
+            "chapter": "Chapter I",
+            "section": "2",
+            "subsection": "zc",
+            "schedule": "Schedule I",
+            "schedule_entry": "Specific learning disabilities",
+            "schedule_part": "Intellectual Disability"
+        }
+    },
+    "rights_triggered_intelligence": {
+        "equality_non_discrimination": "Section 3",
+        "inclusive_education": "Sections 16\u201318",
+        "employment_protection": "Sections 19\u201323",
+        "social_security_healthcare": "Sections 24\u201330",
+        "benchmark_entitlements": "Sections 31\u201337 (if benchmark >= 40%)",
+        "accessibility": "Sections 40\u201346",
+        "certification": {
+            "assessment_guidelines": "Section 56",
+            "certifying_authority": "Section 57",
+            "procedure": "Section 58",
+            "appeal": "Section 59"
+        }
+    },
+    "benchmark_logic_engine": {
+        "threshold_percent": 40,
+        "defined_under": "Section 2(r)",
+        "reservation_section": "Section 34(1)(d)",
+        "free_education": "Section 31",
+        "carry_forward_vacancies": "Section 34(2)",
+        "high_support_eligibility": "Section 38"
+    },
+    "certification_statutory_mapping": {
+        "assessment_guidelines": "Section 56",
+        "certifying_authority_designation": "Section 57",
+        "certification_procedure": "Section 58",
+        "appeal_mechanism": "Section 59"
+    },
+    "statutory_anchor": {
+        "defined_under": "Section 2(zc)",
+        "benchmark_defined_under": "Section 2(r)",
+        "person_defined_under": "Section 2(s)"
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

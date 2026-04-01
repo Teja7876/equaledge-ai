@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ThriveFusion Blog | Disability Knowledge</title>
+<meta name="description" content="Latest articles on disability rights, RPwD Act, accessibility and inclusive education.">
+
+<style>
+body{
+  font-family:system-ui,Segoe UI,Roboto,Arial;
+  max-width:900px;
+  margin:40px auto;
+  padding:0 20px;
+  line-height:1.6;
+  background:#fafafa;
+  color:#222;
+}
+
+h1{margin-bottom:10px;}
+
+#search{
+  width:100%;
+  padding:12px;
+  margin:20px 0;
+  font-size:16px;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+.post{
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  margin-bottom:15px;
+  text-decoration:none;
+  display:block;
+  color:#222;
+}
+
+.post:hover{
+  box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+
+.title{
+  font-size:20px;
+  font-weight:600;
+  color:#1a73e8;
+}
+
+.preview{
+  font-size:14px;
+  margin-top:6px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ThriveFusion Blog</h1>
+
+<p>
+Latest articles about disability rights, accessibility,
+inclusive education and assistive technology.
+</p>
+
+<input id="search" type="text" placeholder="Search articles...">
+
+<div id="posts"></div>
+<p id="loading">Loading articles...</p>
+
+<script>
+let allPosts = [];
+let debounceTimer;
+
+/* =========================
+UTILS
+========================= */
+function cleanText(html){
+  return html.replace(/<\/?[^>]+>/g,"");
+}
+
+function slugify(str){
+  return str
+    .toLowerCase()
+    .replace(/<\/?[^>]+>/g,"")
+    .replace(/[^\w\s-]/g,"")
+    .trim()
+    .replace(/\s+/g,"-");
+}
+
+/* =========================
+RENDER
+========================= */
+function renderPosts(posts){
+  const container = document.getElementById("posts");
+
+  if(!posts.length){
+    container.innerHTML = "<p>No matching results.</p>";
+    return;
+  }
+
+  container.innerHTML = posts.map(post => {
+    const title = cleanText(post.title || "Untitled");
+    const content = cleanText(post.content || "");
+
+    return `
+      <a class="post" href="post.html?title=${slugify(title)}">
+        <div class="title">${title}</div>
+        <div class="preview">${content.substring(0,160)}...</div>
+      </a>
+    `;
+  }).join("");
+}
+
+/* =========================
+LOAD POSTS
+========================= */
+async function loadPosts(){
+  try{
+    const res = await fetch("./posts_clean.json");
+
+    if(!res.ok){
+      throw new Error("posts_clean.json not found");
+    }
+
+    allPosts = await res.json();
+
+    document.getElementById("loading").style.display = "none";
+
+    renderPosts(allPosts);
+
+  }catch(e){
+    document.getElementById("loading").innerText = "Failed to load articles.";
+    console.error(e);
+  }
+}
+
+/* =========================
+AI SEARCH (PRODUCTION)
+========================= */
+document.getElementById("search").addEventListener("input", (e) => {
+  clearTimeout(debounceTimer);
+
+  debounceTimer = setTimeout(async () => {
+    const query = e.target.value.trim();
+
+    // empty → show all
+    if(!query){
+      renderPosts(allPosts);
+      return;
+    }
+
+    try{
+      const res = await fetch("/search", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ query })
+      });
+
+      if(!res.ok){
+        throw new Error("AI search failed");
+      }
+
+      const results = await res.json();
+
+      renderPosts(results);
+
+    }catch(err){
+      console.warn("AI failed, fallback to keyword search");
+
+      // 🔥 fallback (important for production)
+      const fallback = allPosts.filter(p =>
+        (p.title || "").toLowerCase().includes(query.toLowerCase()) ||
+        (p.content || "").toLowerCase().includes(query.toLowerCase())
+      );
+
+      renderPosts(fallback);
+    }
+
+  }, 300); // debounce
+});
+
+/* =========================
+INIT
+========================= */
+loadPosts();
+</script>
+
+</body>
+</html>

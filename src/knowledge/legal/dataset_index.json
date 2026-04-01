@@ -1,0 +1,62 @@
+{
+  "definitions": {
+    "dataset_name": "RPwD Disability Category Assistant - Public Final",
+    "version": "v1.0.0",
+    "act_reference": "Rights of Persons with Disabilities Act, 2016",
+    "statutory_scope": {
+      "total_specified_disabilities": 21,
+      "reservation_section": "Section 34",
+      "definition_anchor_sections": [
+        "Section 2",
+        "Schedule"
+      ],
+      "certification_sections": "Sections 56\u201359",
+      "governance_sections": "Sections 66\u201384",
+      "penalty_sections": "Sections 89\u201395"
+    },
+    "coverage_modules": [
+      "21 Specified Disability Files",
+      "Definitions (Verbatim Anchors)",
+      "Reservation Logic Engine",
+      "Category Lookup Mapping",
+      "Governance & Grievance Framework",
+      "Offences & Penalties Framework",
+      "Legal Verification Engine"
+    ],
+    "assistant_capabilities": [
+      "Disability classification lookup",
+      "Section 34 reservation mapping",
+      "Benchmark eligibility reasoning",
+      "Certification workflow explanation",
+      "Penalty interpretation under Sections 89\u201395",
+      "Governance authority identification",
+      "Statutory definition anchoring"
+    ],
+    "architecture": {
+      "design_type": "RAG with deterministic legal control layer",
+      "anti_hallucination_enabled": true,
+      "section_cross_verification": true
+    },
+    "integrity_controls": {
+      "requires_schedule_alignment": true,
+      "requires_section_citation": true,
+      "explicit_absence_declaration_if_missing": true
+    },
+    "deployment_target": "Public Disability Category Legal Assistant",
+    "structured_reasoning_tags": [
+      "Dataset_Index",
+      "Version_Control",
+      "Legal_Scope_Declaration",
+      "Capability_Registry"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

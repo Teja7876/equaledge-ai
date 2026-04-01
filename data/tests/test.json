@@ -1,0 +1,10 @@
+{
+  "model": "phi3:mini",
+  "prompt": "Explain RAG in 2 short sentences.",
+  "stream": false,
+  "options": {
+    "num_ctx": 2048,
+    "num_thread": 6,
+    "num_predict": 100
+  }
+}

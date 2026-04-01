@@ -1,0 +1,75 @@
+{
+  "definitions": {
+    "schedule_reference": "Schedule to the Rights of Persons with Disabilities Act, 2016",
+    "section_34_category_mapping": {
+      "section_34_1_a": {
+        "label": "Blindness and Low Vision",
+        "disabilities": [
+          "Blindness",
+          "Low Vision"
+        ]
+      },
+      "section_34_1_b": {
+        "label": "Deaf and Hard of Hearing",
+        "disabilities": [
+          "Deaf",
+          "Hard of Hearing"
+        ]
+      },
+      "section_34_1_c": {
+        "label": "Locomotor and Specified Physical Disabilities",
+        "disabilities": [
+          "Locomotor Disability",
+          "Cerebral Palsy",
+          "Leprosy Cured",
+          "Dwarfism",
+          "Acid Attack Victim",
+          "Muscular Dystrophy",
+          "Thalassemia",
+          "Hemophilia",
+          "Sickle Cell Disease"
+        ]
+      },
+      "section_34_1_d": {
+        "label": "Neurodevelopmental and Mental Conditions",
+        "disabilities": [
+          "Autism Spectrum Disorder",
+          "Intellectual Disability",
+          "Specific Learning Disability",
+          "Mental Illness"
+        ]
+      },
+      "section_34_1_e": {
+        "label": "Multiple Disabilities including Deafblindness",
+        "disabilities": [
+          "Multiple Disabilities including Deafblindness"
+        ]
+      }
+    },
+    "other_schedule_disabilities_without_explicit_reservation_slot": [
+      "Chronic Neurological Conditions",
+      "Multiple Sclerosis",
+      "Speech and Language Disability",
+      "Parkinson\u2019s Disease"
+    ],
+    "total_specified_disabilities_count": 21,
+    "normalization_rules": {
+      "case_insensitive_match": true,
+      "exact_name_required_for_statutory_response": true
+    },
+    "structured_reasoning_tags": [
+      "Schedule_Lookup",
+      "Section_34_Category_Map",
+      "Disability_Routing_Layer"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

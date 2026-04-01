@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RPwD Legal AI</title>
+</head>
+<body>
+
+<h1>RPwD Legal AI</h1>
+
+<label for="question">
+Ask your legal question under the RPwD Act
+</label>
+
+<br><br>
+
+<textarea 
+id="question" 
+rows="4" 
+cols="60">
+</textarea>
+
+<br><br>
+
+<button onclick="askAI()">
+Submit Question
+</button>
+
+<h2>Response</h2>
+
+<div 
+id="response" 
+role="region"
+aria-live="polite"
+aria-atomic="true"
+tabindex="0"
+style="border:1px solid black; padding:10px; min-height:100px;">
+</div>
+
+<script>
+async function askAI() {
+  const textarea = document.getElementById("question");
+  const responseBox = document.getElementById("response");
+  const question = textarea.value.trim();
+
+  if (!question) {
+    responseBox.textContent = "Please enter a question.";
+    responseBox.focus();
+    return;
+  }
+
+  responseBox.textContent = "Loading response...";
+  responseBox.focus();
+
+  try {
+    const res = await fetch("http://localhost:8000/ask", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ query: question })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      responseBox.textContent = data.data;
+    } else {
+      responseBox.textContent = "Error: " + data.error;
+    }
+
+  } catch (error) {
+    responseBox.textContent = "Connection error.";
+  }
+
+  responseBox.focus();
+}
+</script>
+
+</body>
+</html>

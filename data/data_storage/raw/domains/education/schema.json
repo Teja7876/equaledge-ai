@@ -1,0 +1,16 @@
+{
+    "source_file": "original_pdf_filename",
+    "domain": "inclusive_education",
+    "verbatim_text": "full_unmodified_extracted_text",
+    "official_authoritative_context": {
+        "international_law": "CRPD Article 24",
+        "india_statutory_framework": "RPwD Act 2016, RTE 2009, Samagra Shiksha, NEP 2020"
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

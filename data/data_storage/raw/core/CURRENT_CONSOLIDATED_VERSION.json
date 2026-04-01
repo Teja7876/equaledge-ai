@@ -1,0 +1,12 @@
+{
+    "canonical_id": "CURRENT_CONSOLIDATED_VERSION",
+    "generated_from": [
+        "ACT_2016_RPWD_ORIGINAL",
+        "RULES_2017_RPWD_ORIGINAL"
+    ],
+    "amendments_applied": [],
+    "generation_method": "programmatic_only",
+    "manual_editing_allowed": false,
+    "training_unlock_condition": "All amendments verified and recorded",
+    "last_generated": "2026-02-23T09:31:12.681457"
+}

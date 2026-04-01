@@ -1,0 +1,41 @@
+{
+    "source_file": "FAQ_Disabilities.pdf",
+    "domain": "disability_rights",
+    "verbatim_text": "",
+    "official_authoritative_context": {
+        "international_framework": {
+            "instrument": "UN Convention on the Rights of Persons with Disabilities (CRPD), 2006",
+            "core_principles": [
+                "Respect for inherent dignity and individual autonomy",
+                "Non-discrimination",
+                "Full and effective participation in society",
+                "Equality of opportunity",
+                "Accessibility",
+                "Equality between men and women",
+                "Respect for evolving capacities of children with disabilities"
+            ]
+        },
+        "india_statutory_framework": {
+            "rpwd_act_2016": [
+                "Expanded definition of disability (21 categories)",
+                "Rights to equality and non-discrimination (Chapter II)",
+                "Reservation in education and employment",
+                "Accessibility obligations (Section 40\u201346)",
+                "Legal capacity and guardianship provisions"
+            ],
+            "national_trust_act_1999": [
+                "Protection and welfare of persons with autism, cerebral palsy, mental retardation and multiple disabilities"
+            ],
+            "rehabilitation_council_of_india_act_1992": [
+                "Standards for professional training and certification in rehabilitation"
+            ]
+        }
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

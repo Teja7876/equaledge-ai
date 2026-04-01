@@ -1,0 +1,63 @@
+{
+  "definitions": {
+    "chief_commissioner_for_persons_with_disabilities": {
+      "section_reference": "Sections 74\u201379",
+      "jurisdiction": "National level authority appointed by Central Government.",
+      "core_functions": [
+        "Monitor implementation of the Act.",
+        "Inquire into complaints regarding deprivation of rights.",
+        "Review safeguards for persons with disabilities.",
+        "Recommend corrective measures to authorities."
+      ],
+      "powers": "Civil court powers for summoning, requisitioning documents and examining evidence."
+    },
+    "state_commissioner_for_persons_with_disabilities": {
+      "section_reference": "Sections 80\u201383",
+      "jurisdiction": "State level authority appointed by State Government.",
+      "core_functions": [
+        "Monitor implementation at State level.",
+        "Inquire into complaints of rights violations.",
+        "Advise State Government on policy matters."
+      ],
+      "powers": "Powers of civil court for inquiry purposes."
+    },
+    "complaint_mechanism": {
+      "who_can_file": "Any person with disability or their representative.",
+      "where_to_file": [
+        "Chief Commissioner (national matters)",
+        "State Commissioner (state-level matters)"
+      ],
+      "subject_matter": "Denial of rights, discrimination, non-implementation of provisions, reservation violation."
+    },
+    "special_courts": {
+      "section_reference": "Section 84",
+      "purpose": "State Government may designate Special Courts for speedy trial of offences under the Act."
+    },
+    "advisory_boards": {
+      "central_advisory_board": "Section 66",
+      "state_advisory_board": "Section 72",
+      "function": "Advise Governments on disability policy and implementation."
+    },
+    "legal_boundary_conditions": [
+      "Commissioners provide quasi-judicial oversight but not criminal conviction.",
+      "Criminal offences prosecuted through designated courts.",
+      "Recommendations binding subject to statutory framework."
+    ],
+    "structured_reasoning_tags": [
+      "Chief_Commissioner",
+      "State_Commissioner",
+      "Complaint_Redressal",
+      "Special_Courts_Section_84",
+      "Governance_Framework"
+    ]
+  },
+  "metadata": {
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+  }
+}

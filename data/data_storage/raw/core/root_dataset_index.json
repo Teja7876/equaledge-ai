@@ -1,0 +1,21 @@
+{
+    "dataset_name": "optimized_disability_ai_dataset",
+    "version": "1.0.0",
+    "created_on": "2026-02-23T09:10:58.108686",
+    "domains": [
+        "legal",
+        "education",
+        "employment",
+        "healthcare",
+        "assistive_technology"
+    ],
+    "validation_required": true,
+    "source_policy": "authoritative_sources_only",
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

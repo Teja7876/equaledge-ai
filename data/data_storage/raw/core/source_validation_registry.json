@@ -1,0 +1,13 @@
+{
+    "policy": "authoritative_sources_only",
+    "allowed_authorities": [
+        "Government of India",
+        "Ministry of Social Justice and Empowerment",
+        "Department of Empowerment of Persons with Disabilities",
+        "UGC",
+        "NCERT",
+        "State Government Gazettes"
+    ],
+    "verification_required_before_training": true,
+    "training_filter": "exclude_if_verification_status_not_verified"
+}

@@ -1,0 +1,44 @@
+{
+    "source_file": "Clarification education dtd.txt",
+    "domain": "inclusive_education",
+    "verbatim_text": "",
+    "official_authoritative_context": {
+        "international_law": {
+            "instrument": "UN Convention on the Rights of Persons with Disabilities (CRPD)",
+            "article": "Article 24 \u2013 Education",
+            "core_obligations": [
+                "Non-discrimination in education",
+                "Inclusive education at all levels",
+                "Reasonable accommodation",
+                "Individualized support measures",
+                "Access to tertiary and lifelong learning"
+            ]
+        },
+        "india_statutory_framework": {
+            "rpwd_act_2016": [
+                "Section 16 \u2013 Duty of educational institutions to provide inclusive education",
+                "Section 17 \u2013 Specific measures including teacher training and accessible materials"
+            ],
+            "right_to_education_act_2009": [
+                "Free and compulsory education for children aged 6\u201314 including children with disabilities"
+            ],
+            "samagra_shiksha": [
+                "Support for Children with Special Needs (CwSN)",
+                "Assistive devices and barrier-free infrastructure",
+                "Teacher capacity building"
+            ],
+            "national_education_policy_2020": [
+                "Equitable and inclusive education",
+                "Removal of access barriers",
+                "Inclusive curriculum and assessment reform"
+            ]
+        }
+    },
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}

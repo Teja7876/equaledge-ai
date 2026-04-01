@@ -1,0 +1,1 @@
+https://equaledge.onrender.com/api-error

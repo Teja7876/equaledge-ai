@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.env
+*.log
+__pycache__/
+*.pyc
+data/chroma/
+data/data_storage/raw/gazette/

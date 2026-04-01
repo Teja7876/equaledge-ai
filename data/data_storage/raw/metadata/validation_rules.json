@@ -1,0 +1,14 @@
+{
+    "require_source_url": true,
+    "require_issuing_authority": true,
+    "require_publication_date": true,
+    "exclude_uncited_statistics": true,
+    "flag_pre_2016_law_as_historical": true,
+    "canonical_id": null,
+    "source_url": null,
+    "issuing_authority": null,
+    "publication_date": null,
+    "last_verified_date": "2026-02-23T09:13:25.022054",
+    "verification_status": "pending_verification",
+    "source_type": null
+}
